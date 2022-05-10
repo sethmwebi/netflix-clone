@@ -3,7 +3,7 @@ import Header from '../components/Header'
 import Banner from '../components/Banner'
 import Row from "../components/Row"
 import requests from '../utils/requests'
-import { Movie, Product } from '../typings'
+import { Movie } from '../typings'
 
 interface Props {
   netflixOriginals: Movie[]
@@ -14,7 +14,6 @@ interface Props {
   horrorMovies: Movie[]
   romanceMovies: Movie[]
   documentaries: Movie[]
-  products: Product[]
 }
 
 const Home = ({ 
@@ -26,7 +25,6 @@ const Home = ({
   romanceMovies,
   topRated,
   trendingNow,
-  products,
 }: Props) => {
   return (
     <div className="relative h-screen lg:h-[140vh]">
