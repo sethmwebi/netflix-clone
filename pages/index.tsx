@@ -35,7 +35,7 @@ const Home = ({
 
   if(loading) return "loading.."
   return (
-    <div className="relative h-screen lg:h-[140vh]">
+    <div className={`relative h-screen lg:h-[140vh] ${showModal && '!h-screen overflow-hidden'}`}>
       <Head>
         <title>Home - Netflix</title>
         <link rel="icon" href="/favicon.ico" />
