@@ -17,7 +17,7 @@ const Modal = () => {
 	const [showModal, setShowModal] = useRecoilState(modalState)
 	const [movie, setMovie] = useRecoilState(movieState)
 	const [trailer, setTrailer] = useState('')
-	const [genres, setGenres] = useState<Genre>([])
+	const [genres, setGenres] = useState<Genre[]>([])
 	const [muted, setMuted] = useState(true)
 
 	useEffect(() => {
